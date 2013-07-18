@@ -88,16 +88,16 @@ omap () {
 
 	echo "dir: omap/beagle/expansion"
 	${git} "${DIR}/patches/omap_beagle_expansion/0001-Beagle-expansion-add-buddy-param-for-expansionboard-.patch"
-	${git} "${DIR}/patches/omap_beagle_expansion/0002-Beagle-expansion-add-zippy.patch"
-	${git} "${DIR}/patches/omap_beagle_expansion/0003-Beagle-expansion-add-zippy2.patch"
-	${git} "${DIR}/patches/omap_beagle_expansion/0004-Beagle-expansion-add-trainer.patch"
-	${git} "${DIR}/patches/omap_beagle_expansion/0005-Beagle-expansion-add-CircuitCo-ulcd-Support.patch"
-	${git} "${DIR}/patches/omap_beagle_expansion/0006-Beagle-expansion-add-wifi.patch"
-	${git} "${DIR}/patches/omap_beagle_expansion/0007-Beagle-expansion-add-beaglefpga.patch"
-	${git} "${DIR}/patches/omap_beagle_expansion/0008-Beagle-expansion-add-spidev.patch"
-	${git} "${DIR}/patches/omap_beagle_expansion/0009-Beagle-expansion-add-Aptina-li5m03-camera.patch"
-	${git} "${DIR}/patches/omap_beagle_expansion/0010-Beagle-expansion-add-LSR-COM6L-Adapter-Board.patch"
-	${git} "${DIR}/patches/omap_beagle_expansion/0011-Beagle-expansion-LSR-COM6L-Adapter-Board-also-initia.patch"
+	#${git} "${DIR}/patches/omap_beagle_expansion/0002-Beagle-expansion-add-zippy.patch"
+	#${git} "${DIR}/patches/omap_beagle_expansion/0003-Beagle-expansion-add-zippy2.patch"
+	#${git} "${DIR}/patches/omap_beagle_expansion/0004-Beagle-expansion-add-trainer.patch"
+	#${git} "${DIR}/patches/omap_beagle_expansion/0005-Beagle-expansion-add-CircuitCo-ulcd-Support.patch"
+	#${git} "${DIR}/patches/omap_beagle_expansion/0006-Beagle-expansion-add-wifi.patch"
+	#${git} "${DIR}/patches/omap_beagle_expansion/0007-Beagle-expansion-add-beaglefpga.patch"
+	#${git} "${DIR}/patches/omap_beagle_expansion/0008-Beagle-expansion-add-spidev.patch"
+	#${git} "${DIR}/patches/omap_beagle_expansion/0009-Beagle-expansion-add-Aptina-li5m03-camera.patch"
+	#${git} "${DIR}/patches/omap_beagle_expansion/0010-Beagle-expansion-add-LSR-COM6L-Adapter-Board.patch"
+	#${git} "${DIR}/patches/omap_beagle_expansion/0011-Beagle-expansion-LSR-COM6L-Adapter-Board-also-initia.patch"
 
 	echo "dir: omap/beagle"
 	#Status: for meego guys..
@@ -116,7 +116,7 @@ omap () {
 	${git} "${DIR}/patches/omap_panda/0001-panda-fix-wl12xx-regulator.patch"
 	#Status: unknown: cherry picked from linaro
 	${git} "${DIR}/patches/omap_panda/0002-ti-st-st-kim-fixing-firmware-path.patch"
-	${git} "${DIR}/patches/omap_panda/0003-Panda-expansion-add-spidev.patch"
+	#${git} "${DIR}/patches/omap_panda/0003-Panda-expansion-add-spidev.patch"
 	${git} "${DIR}/patches/omap_panda/0004-HACK-PandaES-disable-cpufreq-so-board-will-boot.patch"
 	${git} "${DIR}/patches/omap_panda/0005-HACK-panda-enable-OMAP4_ERRATA_I688.patch"
 	${git} "${DIR}/patches/omap_panda/0006-ARM-hw_breakpoint-Enable-debug-powerdown-only-if-sys.patch"
@@ -124,18 +124,18 @@ omap () {
 	#Fix wlan0 on original Panda (strangly the ES was fine...)
 	#v3.10.x
 	#git revert --no-edit d1924519fe1dada0cfd9a228bf2ff1ea15840c84 -s
-	${git} "${DIR}/patches/omap_panda/0007-Revert-regulator-twl-Remove-TWL6030_FIXED_RESOURCE.patch"
+	#${git} "${DIR}/patches/omap_panda/0007-Revert-regulator-twl-Remove-TWL6030_FIXED_RESOURCE.patch"
 	#v3.7.x
 	#git revert --no-edit 029dd3cefa46ecdd879f9b4e2df3bdf4371cc22c -s
 	${git} "${DIR}/patches/omap_panda/0008-Revert-regulator-twl-Remove-another-unused-variable-.patch"
 	#v3.6.x
 	#git revert --no-edit e76ab829cc2d8b6350a3f01fffb208df4d7d8c1b -s
 	#git revert --no-edit 0e8e5c34cf1a8beaaf0a6a05c053592693bf8cb4 -s
-	${git} "${DIR}/patches/omap_panda/0009-Revert-regulator-twl-Remove-references-to-the-twl403.patch"
-	${git} "${DIR}/patches/omap_panda/0010-Revert-regulator-twl-Remove-references-to-32kHz-cloc.patch"
+	#${git} "${DIR}/patches/omap_panda/0009-Revert-regulator-twl-Remove-references-to-the-twl403.patch"
+	#${git} "${DIR}/patches/omap_panda/0010-Revert-regulator-twl-Remove-references-to-32kHz-cloc.patch"
 
 	#spidev: make sure to set the pins up...
-	${git} "${DIR}/patches/omap_panda/0011-panda-spidev-setup-pinmux.patch"
+	#${git} "${DIR}/patches/omap_panda/0011-panda-spidev-setup-pinmux.patch"
 
 	#Status: not for upstream: http://www.spinics.net/lists/arm-kernel/msg214633.html
 	#Fixes:
