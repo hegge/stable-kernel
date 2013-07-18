@@ -111,6 +111,8 @@ omap () {
 	${git} "${DIR}/patches/omap_beagle/0005-ARM-OMAP-Beagle-use-TWL4030-generic-reset-script.patch"
 	${git} "${DIR}/patches/omap_beagle/0006-DSS2-use-DSI-PLL-for-DPI-with-OMAP3.patch"
 
+	${git} "${DIR}/patches/omap_beagle/0007-Revert-ARM-OMAP5-Enable-Cortex-A15-errata-798181.patch"
+
 	echo "dir: omap/panda"
 	#Status: not for upstream: push device tree version upstream...
 	${git} "${DIR}/patches/omap_panda/0001-panda-fix-wl12xx-regulator.patch"

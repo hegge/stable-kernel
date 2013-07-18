@@ -1,0 +1,25 @@
+From f83c258d65583e505563efc6ab0172d64000be84 Mon Sep 17 00:00:00 2001
+From: Torstein Hegge <hegge@resisty.net>
+Date: Thu, 18 Jul 2013 11:20:59 +0200
+Subject: [PATCH] Revert "ARM: OMAP5: Enable Cortex A15 errata 798181"
+
+This reverts commit 62618c17e077b22bb12bdf754ca5bf89f2ae4dcd.
+---
+ arch/arm/mach-omap2/Kconfig | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/arch/arm/mach-omap2/Kconfig b/arch/arm/mach-omap2/Kconfig
+index 627fa7e..58152b1 100644
+--- a/arch/arm/mach-omap2/Kconfig
++++ b/arch/arm/mach-omap2/Kconfig
+@@ -62,7 +62,6 @@ config SOC_OMAP5
+ 	select HAVE_SMP
+ 	select COMMON_CLK
+ 	select HAVE_ARM_ARCH_TIMER
+-	select ARM_ERRATA_798181
+ 
+ config SOC_AM33XX
+ 	bool "AM33XX support"
+-- 
+1.8.3.1.549.g1f3a412
+
